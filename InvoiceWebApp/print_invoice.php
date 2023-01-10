@@ -83,8 +83,10 @@ $output .= '
 	</td>
 	</tr>
 	</table>';
+
+echo($output);
 // create pdf of invoice	
-$invoiceFileName = 'Invoice_'.$invoiceValues['order_id'].'.pdf';
+/*$invoiceFileName = 'Invoice_'.$invoiceValues['order_id'].'.pdf';
 require_once 'dompdf/src/Autoloader.php';
 Dompdf\Autoloader::register();
 use Dompdf\Dompdf;
@@ -93,5 +95,5 @@ $dompdf->loadHtml(html_entity_decode($output));
 $dompdf->setPaper('A4', 'landscape');
 $dompdf->render();
 $dompdf->stream($invoiceFileName, array("Attachment" => false));
-?>   
+?> */  
    
